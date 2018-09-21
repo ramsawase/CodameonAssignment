@@ -2,60 +2,60 @@
   <div class="container panel panel-defualt">
     <div class="row panel-body card">
       <div class="col-md-12 col-sm-12 col-xs-12 card-body">
-         <h4 class="text-center">Search Assignment</h4>
+       <h4 class="text-center">Search Assignment</h4>
+     </div>
+     <div class="container">
+      <div class="Search_form row">
+        <form>
+          <input type="text" id="myInput" placeholder="Search.." name="search" [(ngModel)]="searchString">
+          <button (click)="searchRecord()" id="search"><i class="fa fa-search"></i></button>
+        </form>
       </div>
-      <div class="container">
-        <div class="Search_form row">
-          <form>
-            <input type="text" id="myInput" placeholder="Search.." name="search" [(ngModel)]="searchString">
-            <button (click)="searchRecord()" id="search"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
     </div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="table-responsive">
-        <div class="table" style="margin-top:15px;">
-          <thead>
-            <tr>
-              <th>adj_fa</th>
-              <th>anniversary_date</th>
-              <th>established_date</th>
-              <th>exam_no</th>
-              <th>first_name</th>
-              <th>group_no</th>
-              <th>last_name</th>
-              <th>list_agency_code</th>
-              <th>list_agency_desc</th>
-              <th>list_no</th>
-              <th>list_title_code</th>
-              <th>list_title_desc</th>
-              <th>published_date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor = "let user of users">
-              <td>{{user['adj_fa']}}</td>
-              <td>{{user['anniversary_date']}}</td>
-              <td>{{user['established_date']}}</td>
-              <td>{{user['exam_no']}}</td>
-              <td>{{user['first_name']}}</td>
-              <td>{{user['group_no']}}</td>
-              <td>{{user['last_name']}}</td>
-              <td>{{user['list_agency_code']}}</td>
-              <td>{{user['list_agency_desc']}}</td>
-              <td>{{user['list_no']}}</td>
-              <td>{{user['list_title_code']}}</td>
-              <td>{{user['list_title_desc']}}</td>
-              <td>{{user['published_date']}}</td>
-            </tr>      
-          </tbody>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="table-responsive">
+            <div class="table" style="margin-top:15px;">
+              <thead>
+                <tr>
+                  <th>adj_fa</th>
+                  <th>anniversary_date</th>
+                  <th>established_date</th>
+                  <th>exam_no</th>
+                  <th>first_name</th>
+                  <th>group_no</th>
+                  <th>last_name</th>
+                  <th>list_agency_code</th>
+                  <th>list_agency_desc</th>
+                  <th>list_no</th>
+                  <th>list_title_code</th>
+                  <th>list_title_desc</th>
+                  <th>published_date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor = "let user of users">
+                  <td>{{user['adj_fa']}}</td>
+                  <td>{{user['anniversary_date']}}</td>
+                  <td>{{user['established_date']}}</td>
+                  <td>{{user['exam_no']}}</td>
+                  <td>{{user['first_name']}}</td>
+                  <td>{{user['group_no']}}</td>
+                  <td>{{user['last_name']}}</td>
+                  <td>{{user['list_agency_code']}}</td>
+                  <td>{{user['list_agency_desc']}}</td>
+                  <td>{{user['list_no']}}</td>
+                  <td>{{user['list_title_code']}}</td>
+                  <td>{{user['list_title_desc']}}</td>
+                  <td>{{user['published_date']}}</td>
+                </tr>      
+              </tbody>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>
 </div>
