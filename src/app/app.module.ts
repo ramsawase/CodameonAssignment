@@ -11,15 +11,13 @@ import { SearchPipe } from './search.pipe';
   declarations: [
     AppComponent,
     SearchComponent,
-   
     SearchPipe
-  
   ],
+
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule,
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

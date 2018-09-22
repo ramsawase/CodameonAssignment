@@ -7,7 +7,7 @@ form.example input[type=text] {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 70%;
+
     background: #f1f1f1;
 }
 form{
@@ -18,9 +18,9 @@ form{
 
 form.example button {
     float: left;
-    width: 20%;
+
     padding: 10px;
-    background: #2196F3;
+    background: #383858;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
@@ -39,6 +39,16 @@ form.example::after {
 }
 
 th{
-    background-color: hotpink;
+    background-color: #383858;
     color: #f1f1f1;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
 }
